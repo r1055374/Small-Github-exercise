@@ -20,4 +20,7 @@ button.addEventListener("click", () => {
   const newColor = randomColor();
   document.body.style.backgroundColor = newColor;
   document.getElementById("hiddenText").style.display = "none";
+  const listItem = document.createElement("li");
+  listItem.innerText = "Nieuw Item";
+  document.getElementById("bigListOfText").appendChild(listItem);
 });
